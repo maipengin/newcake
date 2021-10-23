@@ -1,0 +1,8 @@
+.hide {
+  display: none;
+}
+
+.scrollIn {
+  margin-top: 0;
+  transform: all 1500ms;
+}
