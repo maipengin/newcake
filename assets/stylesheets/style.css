@@ -10,7 +10,7 @@ html {
   width: 100%;
   height: 100%;
   line-height: 2;
-  color: #b8b9b4;
+  color: #595757;
   font-size: 20px;
   font-family: "Noto Serif JP", sans-serif;
 }
@@ -45,7 +45,9 @@ html {
   color: white;
   position: absolute;
   top: 200px;
-  left: 40%;
+  left: 50%;
+  width: fit-content;
+  transform: translateX(-50%);
   text-shadow: #b9d7dc 8px 0 3px;
 }
 
@@ -84,11 +86,12 @@ html {
   align-items: center;
   position: absolute;
   top: 55%;
-  left: 42%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .l-header__nav {
-  color: #b8b9b4;
+  color: #595757;
   font-family: "Noto Serif JP", sans-serif;
 }
 
@@ -126,12 +129,12 @@ html {
   display: flex;
   justify-content: center;
   list-style: none;
-  color: #b8b9b4;
+  color: #8c7cbc;
   font-size: 25px;
-  padding-top: 80px;
+  padding: 80px 20px 0;
 }
 .l-header__navMenu--icons > li:not(:first-child) {
-  padding-left: 73px;
+  padding-left: 50px;
 }
 
 .l-header__navMenu--icons > li:hover {
@@ -167,7 +170,7 @@ html {
 
 .p-main__overView {
   display: inline-block;
-  padding: 75px 10% 0 10%;
+  padding-top: 40px;
   text-align: center;
   background-image: url("../images/cream.jpeng.jpeg");
   background: rgba(255, 255, 255, 0.5);
@@ -227,8 +230,7 @@ html {
 
 .p-main__products--title {
   font-size: 45px;
-  padding-bottom: 20px;
-
+  padding: 90px 0 20px;
   text-align: center;
 }
 
@@ -305,7 +307,7 @@ html {
   line-height: 1.5;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .p-main__products--introductionTexts {
@@ -316,7 +318,7 @@ html {
 /* *料金・期間 */
 .p-main__price {
   width: 100%;
-  padding: 80px 4% 50px;
+  padding: 90px 4% 50px;
 }
 
 .p-main__price--inner {
@@ -449,9 +451,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 760px;
+  width: 750px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .p-main__information--heading {
@@ -552,7 +554,7 @@ html {
 /* ＊お客様の声 */
 .p-main__review {
   width: 100%;
-  padding: 100px 30px 100px;
+  padding: 110px 30px 100px;
   text-align: center;
   max-width: 950px;
   margin: 0 auto;
@@ -579,10 +581,10 @@ html {
 .p-main__review--listPicture {
   width: 100%;
   height: 226px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 
-  background-image: url("../images/people1.png");
+  background-image: url("../images/people3.jpg");
 }
 
 /* *お問い合わせ */
@@ -667,7 +669,7 @@ input[type="submit"] {
 }
 
 .l-footer--wrap {
-  height: 280px;
+  height: 350px;
   padding: 0 10%;
   background-color: rgb(220, 255, 223);
 }
@@ -690,10 +692,10 @@ input[type="submit"] {
 }
 
 .p-footer--textPr {
-  width: 220px;
+  /* width: 220px; */
   font-size: 11px;
   padding: 13px;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: wheat;
   text-align: center;
   border: medium solid #fff;
@@ -709,9 +711,9 @@ input[type="submit"] {
 
 .p-footer--copyRight {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   font-size: 11px;
 }
 
@@ -850,7 +852,7 @@ input[type="submit"] {
     position: absolute;
     position: relative;
     top: 80px;
-    left: 75%;
+    left: 65%;
     background-color: #dcecf0;
     border: 3px solid #b9d7dc;
     cursor: pointer;
@@ -894,13 +896,16 @@ input[type="submit"] {
 
   .l-header__mainIcon {
     top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .l-header__navMessage {
-    padding: 10% 20% 0;
+    padding-top: 70px;
     margin: 0 auto;
     font-size: 15px;
     display: block;
+    text-align: center;
   }
 
   .l-header__navText {
@@ -920,7 +925,7 @@ input[type="submit"] {
 
   .p-main__overView {
     display: inline-block;
-    padding: 50px 50px 0 50px;
+    padding: 50px 0 50px;
     text-align: center;
   }
 
@@ -930,6 +935,7 @@ input[type="submit"] {
 
   .p-main__overView--topText {
     font-size: 15px;
+    padding: 0 30px 0;
   }
 
   .p-main__overView--main {
@@ -965,16 +971,21 @@ input[type="submit"] {
   }
 
   .p-main__overView--mainPicture {
-    height: 310px;
-    width: 310px;
+    height: 250px;
+    width: 250px;
     margin: auto;
+  }
+
+  .p-main__products--title {
+    font-size: 35px;
   }
 
   .p-main__products--list > li {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    /* width: 600px; */
     margin: auto;
+    padding: 0 10% 0;
   }
 
   .p-main__products--list > li:nth-child(even) {
@@ -983,8 +994,8 @@ input[type="submit"] {
   }
 
   .p-main__products--listPicture {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: auto;
   }
 
@@ -1015,65 +1026,132 @@ input[type="submit"] {
 
   .p-main__products--introductionText {
     /* width: 600px; */
-    padding: 0 50px;
+    padding: 0 30px;
   }
   .p-main__products--introductionTexts {
     width: 100%;
     padding-bottom: 30px;
   }
   /* ＊料金・期間 */
+
+  .p-main__price {
+    padding: 80px 10% 0;
+  }
+
+  .p-main__price--title {
+    font-size: 35px;
+  }
+
+  .p-main__price--listTime {
+    width: 100%;
+  }
+
+  .p-main__price--item {
+    width: 300px;
+  }
   .p-main__price--items {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     width: 100%;
-    padding: 20px 50px;
   }
 
   .p-main__price--listText {
     width: 100%;
-    padding: 0 0 20px 50px;
+    /* padding: 0 0 20px 50px; */
+  }
+
+  .p-main__price--listPicture {
+    background-size: contain;
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+
+  .p-main__price--listDelivery {
+    display: block;
+    padding-left: 10%;
+    width: 100%;
+  }
+
+  .p-main__price--rule {
+    padding: 70px 0 30px;
+  }
+
+  .p-main__price--ruleTitle {
+    font-size: 20px;
+  }
+
+  .p-main__price--ruleList > li {
+    font-size: 15px;
+  }
+
+  .p-main__information {
+    padding: 85px 10% 50px;
+  }
+
+  .p-main__information--title {
+    font-size: 35px;
   }
 
   .p-main__information--inner {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 0;
   }
 
-  ..p-main__information--menuPic {
+  .p-main__information--headingTitle {
+    font-size: 30px;
+  }
+
+  .p-main__information--menu {
+    display: block;
+    padding-left: 8%;
+    /* width: 320px; */
+    text-align: left;
+    padding: 0;
+  }
+
+  .p-main__information--menuPic {
     margin: auto;
+    width: 280px;
+    height: 280px;
   }
 
   .p-main__information--heading {
-    width: 100%;
+    /* width: 100%; */
     padding-bottom: 20px;
     /* padding: 0 0 20px 50px; */
   }
   .p-main__information--menu {
     text-align: center;
+    width: 300px;
   }
   .p-main__information--menuText {
-    text-align: left;
+    text-align: center;
     width: 100%;
   }
   .p-main__information--menuList {
-    text-align: left;
+    text-align: center;
     width: 450px;
     margin: auto;
+    padding-top: 30px;
   }
   /* *経路案内 */
   .p-main__guide {
     width: 100%;
-    padding: 20px 80px;
+    /* padding: 20px 80px; */
+  }
+
+  .p-main__guide--title {
+    font-size: 30px;
   }
   .p-main__guide--map {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 20px;
-    max-width: 500px;
-    height: 350px;
-    background-size: cover;
+    max-width: 280px;
+    height: 130px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../images/japan.jpg");
   }
@@ -1083,17 +1161,25 @@ input[type="submit"] {
   }
   .p-main__guide--mapMini {
     padding: 0;
+    font-size: 12px;
   }
 
   .p-main__guide--mapLarge {
     padding: 0;
+    font-size: 17px;
+  }
+
+  .p-main__guide--google {
+    font-size: 13px;
+    margin: auto;
   }
 
   /* *お客様の声 */
 
   .p-main__review {
   }
-  .-main__review--title {
+  .p-main__review--title {
+    font-size: 35px;
   }
   .p-main__review--list {
     flex-direction: column;
@@ -1109,25 +1195,69 @@ input[type="submit"] {
     background-size: cover;
     background-repeat: no-repeat;
 
-    background-image: url("../images/people1.png");
+    background-image: url("../images/people3.jpg");
   }
   /* ＊お問い合わせ */
   .p-main__contact--inner {
-    margin: 10% 60px 0;
+    margin: 0;
+  }
+
+  .p-main__contact--title {
+    font-size: 30px;
   }
 
   .p-main__contact--form {
-    width: 80%;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  /* .form {
+    width: 0;
+    margin: 0;
+  } */
+  .label {
+    text-align: left;
   }
 
   .inputs {
-    width: 70%;
+    width: 100%;
   }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+  input[type="text"] {
+    padding: 0;
+    width: 100%;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .item {
+    display: block;
+    width: 100%;
+  }
+
   .l-footer--wrap {
-    height: 270px;
+    height: 430px;
   }
   .l-footer--wrap--top {
-    width: 10%;
+    width: 100px;
+  }
+  .p-footer--sns {
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .p-footer--text {
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .p-footer--copyRight {
+    bottom: 10px;
   }
 }
 
