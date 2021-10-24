@@ -45,6 +45,12 @@ $(function() {
   });
 });
 
+$('.globalMenuSp').on('click',function(){
+  $('.globalMenuSp').toggleClass('close');
+  $('.globalMenuSp__list').fadeToggle(500);
+  $('body').toggleClass('noscroll');
+});
+
 // *ふわっと
 // $(window).on('load scroll', function (){
 

@@ -749,6 +749,10 @@ input[type="submit"] {
   /* SP style */
 
   /*　ハンバーガーボタン　*/
+  body.noscroll {
+    overflow: hidden;
+  }
+
   .p-hamburger {
     display: block;
     position: fixed;
