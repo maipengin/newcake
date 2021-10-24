@@ -95,29 +95,16 @@ function fadeAnime(){
     });// ここまで画面が読み込まれたらすぐに動く場合の記述
 
 
-// フェードする前のcssを定義
-//   $('.scroll-fade').css({
-//       opacity: 0,
-//       transform: 'translateY('+ effect_move +'px)',
-//       transition: effect_time + 'ms'
-//   });
-
-//   // スクロールまたはロードするたびに実行
-//   $(window).on('scroll load', function(){
-//       var scroll_top = $(this).scrollTop();
-//       var scroll_btm = scroll_top + $(this).height();
-//       effect_pos = scroll_btm - effect_pos;
-
-//       // effect_posがthis_posを超えたとき、エフェクトが発動
-//       $('.scroll-fade').each( function() {
-//           var this_pos = $(this).offset().top;
-//           if ( effect_pos > this_pos ) {
-//               $(this).css({
-//                   opacity: 1,
-//                   transform: 'translateY(0)'
-//               });
-//           }
-//       });
-//   });
-// });
-// *ふわっと２
+    // *スライダー＊
+    $('.slider').slick({
+      autoplay: true,//自動的に動き出すか。初期値はfalse。
+      infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+      speed: 500,//スライドのスピード。初期値は300。
+      slidesToShow: 3,//スライドを画面に3枚見せる
+      slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+      prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+      nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+      centerMode: true,//要素を中央ぞろえにする
+      variableWidth: true,//幅の違う画像の高さを揃えて表示
+      dots: true,//下部ドットナビゲーションの表示
+    });

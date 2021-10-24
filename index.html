@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/stylesheets/reset.css">
   <link rel="stylesheet" href="./assets/stylesheets/style.css">
   <link rel="stylesheet" href="./assets/stylesheets/styleJs.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <!-- <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet"> -->
 </head>
 <body>
@@ -24,14 +25,26 @@
       <ul>
           <li><a href="#top">TOP</a></li>
           <li><a href="#discription">概要</a></li>
-          <li><a href="#information">商品紹介</a></li>
+          <li><a href="#information">生クリーム紹介</a></li>
           <li><a href="#price">料金・期間</a></li>
           <li><a href="#review">お客様の声</a></li>
       </ul>
     </nav>
+<!-- *↑ハンバーガー -->
 
-<!-- *ハンバーガー -->
+<!-- ＊↓スライダー＊ -->
+<ul class="slider">
+  <li><img src="./assets/images/bearcake.png" alt=""></li>
+  <li><img src="./assets/images/bearcake.png" alt=""></li>
+  <li><img src="./assets/images/bearcake.png" alt=""></li>
+  <li><img src="./assets/images/bearcake.png" alt=""></li>
+  <li><img src="./assets/images/bearcake.png" alt=""></li>
+  <!--/slider-->
+</ul>
+
     <header class="l-header__wrap" id="top">
+
+
       <div class="l-header__img">
         <div class="l-header__imgContents">
           <div class="l-header__imgContents--text">
@@ -58,23 +71,22 @@
           <ul class="l-header__navMenu--icons">
             <li><a href="#top">TOP</a></li>
             <li><a href="#discription">概要</a></li>
-            <li><a href="#information">商品紹介</a></li>
+            <li><a href="#information">生クリーム紹介</a></li>
             <li><a href="#price">料金・期間</a></li>
             <li><a href="#review">お客様の声</a></li>
           </ul>
         </div>
       </div>
-      <div class="l-header__scrollNav hide scrollIn">
-        <ul class="l-header__scrollNav--icons">
-          <li><a href="#top">TOP</li>
-          <li><a href="#discription">概要</a></li>
-          <li><a href="#information">商品紹介</a></li>
-          <li><a href="#price">料金・期間</a></li>
-          <li><a href="#review">クチコミ</a></li>
-      </ul>
-      </div>
-
     </header>
+    <div class="l-header__scrollNav hide scrollIn">
+      <ul class="l-header__scrollNav--icons">
+        <li><a href="#top">TOP</li>
+        <li><a href="#discription">概要</a></li>
+        <li><a href="#information">生クリーム紹介</a></li>
+        <li><a href="#price">料金・期間</a></li>
+        <li><a href="#review">クチコミ</a></li>
+      </ul>
+    </div>
     <section class="p-main__overView fadeInTrigger" id="discription">
       <div class="p-main__overView--text ">
         <h2 class="p-main__overView--title">ケーキへの想い</h2>
@@ -101,7 +113,7 @@
     </section>
 
     <section class="p-main__products fadeInTrigger" id="information">
-      <h2 class="p-main__products--title">商品紹介</h2>
+      <h2 class="p-main__products--title">生クリーム紹介</h2>
       <ul class="p-main__products--list">
         <li>
           <div class="p-main__products--sentence">
@@ -246,8 +258,7 @@
       <div class="p-main__contact--inner">
         <div class="p-main__contact--title">お問い合わせ</div>
 
-        <form class="p-main__contact--form">
-
+        <form  action="mailto:mai.pengin@icloud.com" method="post" enctype="text/plain" class="p-main__contact--form">
           <div class="item">
             <label class="label">お名前</label>
             <input class="inputs" type="text" name="name">
@@ -286,7 +297,9 @@
           <p class="p-footer--textAddress">〒969-0105<br>福島県西白河郡泉崎村大字踏瀬字大山3</p>
           <p class="p-footer--textPr">大量受注も行なっておりますので、<br>お気軽にお問い合わせください</p>
         </div>
-        <img class="l-footer--wrap--top" src="./assets/images/hpb.gif" alt="TOPに戻る">
+        <a href="#top">
+          <img class="l-footer--wrap--top" src="./assets/images/hpb.gif">
+        </a>
         <p class="p-footer--copyRight"> 株式会社いわた ©︎2021 Iwata inc.</p>
         <div class="p-footer--sns">
           <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1665596389&extra_1=s%7Cc%7C321610682049%7Ce%7C%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%20%E3%83%96%E3%83%83%E3%82%AF%7C&placement=&creative=321610682049&keyword=%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%20%E3%83%96%E3%83%83%E3%82%AF&partner_id=googlesem&extra_2=campaignid%3D1665596389%26adgroupid%3D65075436220%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-296040927062%26loc_physical_ms%3D1009292%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwwsmLBhACEiwANq-tXPd0A4reEDAj2bvPhJKQg_a7DFudKx0vwJfOjWQaGhUUVUWUgrnkFRoCLf0QAvD_BwE" class="p-footer--sns--fb"　>
@@ -306,5 +319,10 @@
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--自作のJS-->
+<script src="./assets/js/index.js"></script>
+
 </body>
 </html>

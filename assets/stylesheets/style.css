@@ -147,6 +147,7 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
   /* margin-top: -50px; */
   background-color: #d0e4ec;
 }
@@ -1192,7 +1193,7 @@ input[type="submit"] {
     margin-top: 20px;
     width: 200px;
     height: 200px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
     background-image: url("../images/people3.jpg");
