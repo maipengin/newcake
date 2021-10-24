@@ -225,14 +225,18 @@ html {
   padding-top: 70px;
   /* height: 1500px; */
   display: inline-block;
-  padding: 75px 8% 0;
+  padding: 60px 8% 0;
   text-align: center;
 }
 
 .p-main__products--title {
   font-size: 45px;
-  padding: 90px 0 20px;
+  padding: 30px 0 20px;
   text-align: center;
+}
+
+.p-main__products--list　 {
+  width: 100%;
 }
 
 .p-main__products--list > li {
@@ -240,7 +244,7 @@ html {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 15% 0;
+  /* padding: 0 8% 0; */
 }
 
 .p-main__products--list > li:not(:last-child) {
@@ -262,6 +266,7 @@ html {
   align-items: flex-start;
   border-bottom: 7px solid #edbd42;
   margin-bottom: 10px;
+  line-height: normal;
   /* text-align: left; */
 }
 
@@ -308,7 +313,7 @@ html {
   line-height: 1.5;
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px 40px 70px;
 }
 
 .p-main__products--introductionTexts {
@@ -749,9 +754,6 @@ input[type="submit"] {
   /* SP style */
 
   /*　ハンバーガーボタン　*/
-  body.noscroll {
-    overflow: hidden;
-  }
 
   .p-hamburger {
     display: block;
@@ -896,17 +898,17 @@ input[type="submit"] {
   /* *変更したい */
   .l-header__wrap {
     position: relative;
-    height: 600px;
+    height: 700px;
   }
 
   .l-header__mainIcon {
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .l-header__navMessage {
-    padding-top: 70px;
+    padding-top: 130px;
     margin: 0 auto;
     font-size: 15px;
     display: block;
@@ -930,12 +932,13 @@ input[type="submit"] {
 
   .p-main__overView {
     display: inline-block;
-    padding: 50px 0 50px;
+    padding: 20px 0 50px;
     text-align: center;
   }
 
   .p-main__overView--title {
     font-size: 35px;
+    /* padding-top: 50px; */
   }
 
   .p-main__overView--topText {
@@ -981,8 +984,12 @@ input[type="submit"] {
     margin: auto;
   }
 
+  .p-main__products {
+    padding: 10px 8% 0;
+  }
   .p-main__products--title {
     font-size: 35px;
+    padding-top: 10px;
   }
 
   .p-main__products--list > li {
@@ -1031,7 +1038,7 @@ input[type="submit"] {
 
   .p-main__products--introductionText {
     /* width: 600px; */
-    padding: 0 30px;
+    padding: 0 30px 50px;
   }
   .p-main__products--introductionTexts {
     width: 100%;
@@ -1040,7 +1047,7 @@ input[type="submit"] {
   /* ＊料金・期間 */
 
   .p-main__price {
-    padding: 80px 10% 0;
+    padding: 30px 10% 0;
   }
 
   .p-main__price--title {
@@ -1182,6 +1189,7 @@ input[type="submit"] {
   /* *お客様の声 */
 
   .p-main__review {
+    padding: 40px 30px 100px;
   }
   .p-main__review--title {
     font-size: 35px;

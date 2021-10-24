@@ -36,20 +36,15 @@ $(window).scroll(function () {
 $(function() {
   $('.p-hamburger').click(function() {
       $(this).toggleClass('active');
-
-      if ($(this).hasClass('active')) {
-          $('.globalMenuSp').addClass('active');
-      } else {
-          $('.globalMenuSp').removeClass('active');
-      }
+      $('.globalMenuSp').toggleClass('active');
   });
 });
 
 $('.globalMenuSp').on('click',function(){
-  $('.globalMenuSp').toggleClass('close');
-  $('.globalMenuSp__list').fadeToggle(500);
-  $('body').toggleClass('noscroll');
+  $('.p-hamburger').toggleClass('active');
+  $(this).toggleClass('active');
 });
+
 
 // *ふわっと
 // $(window).on('load scroll', function (){
