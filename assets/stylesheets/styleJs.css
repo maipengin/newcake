@@ -1,10 +1,10 @@
 .hide {
-  display: none;
+  opacity: 0;
 }
 
 .scrollIn {
   margin-top: 0;
-  transition: all 1500ms;
+  transition: all 1200ms;
 }
 
 /* fadeIn */

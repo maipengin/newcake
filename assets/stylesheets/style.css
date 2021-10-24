@@ -130,7 +130,7 @@ html {
   justify-content: center;
   list-style: none;
   color: #8c7cbc;
-  font-size: 25px;
+  font-size: 23px;
   padding: 80px 20px 0;
 }
 .l-header__navMenu--icons > li:not(:first-child) {
@@ -149,7 +149,9 @@ html {
   width: 100%;
   z-index: 100;
   /* margin-top: -50px; */
+  font-size: 23px;
   background-color: #d0e4ec;
+  padding: 0 20px;
 }
 
 .l-header__scrollNav--icons {
@@ -161,7 +163,7 @@ html {
 }
 
 .l-header__scrollNav--icons > li:not(:first-child) {
-  padding-left: 70px;
+  padding-left: 50px;
 }
 
 .l-header__scrollNav--icons > li:hover {
@@ -454,16 +456,18 @@ html {
   margin-bottom: 30px;
 }
 .p-main__information--inner {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   align-items: flex-start;
-  width: 750px;
+  width: fit-content;
   margin: 0 auto;
   padding: 20px 0;
 }
 
 .p-main__information--heading {
   display: flex;
+  margin: auto;
+  width: inherit;
 }
 
 .p-main__information--headingIcon {
@@ -479,15 +483,16 @@ html {
   /* display: flex;
   display: inline-block; */
   display: block;
-  padding-left: 8%;
-  width: 450px;
+  padding-top: 20px;
+  margin: auto;
+  width: inherit;
   text-align: left;
 }
 
 .p-main__information--menuText {
   font-size: 18px;
   display: inline-block;
-  width: 300px;
+  width: 380px;
   line-height: 25px;
   padding-bottom: 20px;
 }
@@ -497,15 +502,16 @@ html {
   margin-bottom: 30px;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 300px;
+  width: auto;
   height: 300px;
 }
 
 .p-main__information--menuList {
-  max-width: 300px;
+  max-width: 260px;
   font-size: 18px;
   line-height: 25px;
   text-align: left;
+  margin: auto;
 }
 /* ＊施設案内 */
 .p-main__guide {
@@ -771,7 +777,7 @@ input[type="submit"] {
     display: block;
     position: absolute;
     width: 60px;
-    height: 3px;
+    height: 4px;
     left: 6px;
     background: #555;
     -webkit-transition: 0.3s ease-in-out;
@@ -779,14 +785,14 @@ input[type="submit"] {
     transition: 0.3s ease-in-out;
   }
   .p-hamburger span:nth-child(1) {
-    top: 10px;
-    left: 5px;
+    top: 18px;
+    /* left: 5px; */
   }
   .p-hamburger span:nth-child(2) {
-    top: 30px;
+    top: 38px;
   }
   .p-hamburger span:nth-child(3) {
-    top: 50px;
+    top: 58px;
   }
 
   /* ナビ開いてる時のボタン */
@@ -1097,7 +1103,7 @@ input[type="submit"] {
   }
 
   .p-main__information {
-    padding: 85px 10% 50px;
+    /* padding: 85px 10% 50px; */
   }
 
   .p-main__information--title {
@@ -1107,7 +1113,7 @@ input[type="submit"] {
   .p-main__information--inner {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     padding: 20px 0;
   }
 
